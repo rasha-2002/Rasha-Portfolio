@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(135deg, #16213e, #0f3460);
+
+    color: white;
+}
+
+
+/* =========================
+   Weather App
+========================= */
+
+.weather-app {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   Weather Card
+========================= */
+
+.weather-card {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   Title
+========================= */
+
+.weather-card h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #c7d2e3;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Search
+========================= */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 14px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #4f9cff;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #327fe0;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Weather Result
+========================= */
+
+#weather-result {
+    min-height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    color: #c7d2e3;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 600px) {
+
+    .weather-card {
+        padding: 30px 20px;
+    }
+
+    .weather-card h1 {
+        font-size: 34px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}

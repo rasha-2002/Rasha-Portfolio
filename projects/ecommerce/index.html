@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rasha Store | E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                Rasha<span>Store</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#cart">
+                        Cart 🛒
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">WELCOME TO MY STORE</p>
+
+                <h1>
+                    Hi, I'm <span>Rasha Hujeiry</span>
+                </h1>
+
+                <h2>Front-End Developer</h2>
+
+                <p>
+                    Welcome to Rasha Store, your simple and modern
+                    online shopping experience.
+                </p>
+
+                <a href="#products" class="btn">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Products -->
+        <section id="products" class="products-section">
+
+            <h2>Our Products</h2>
+
+            <p class="section-description">
+                Discover our latest products.
+            </p>
+
+            <div class="products">
+
+                <div class="product-card">
+                    <div class="product-image">👕</div>
+                    <h3>Classic T-Shirt</h3>
+                    <p>Comfortable everyday T-shirt.</p>
+                    <span class="price">$20</span>
+                    <button onclick="addToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">👟</div>
+                    <h3>Sport Shoes</h3>
+                    <p>Modern shoes for your daily style.</p>
+                    <span class="price">$45</span>
+                    <button onclick="addToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">👜</div>
+                    <h3>Fashion Bag</h3>
+                    <p>Elegant bag for every occasion.</p>
+                    <span class="price">$35</span>
+                    <button onclick="addToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="about-section">
+
+            <h2>About Me</h2>
+
+            <p>
+                I'm Rasha Hujeiry, a Front-End Developer interested
+                in creating modern, responsive and user-friendly websites
+                using HTML, CSS and JavaScript.
+            </p>
+
+        </section>
+
+
+        <!-- Cart -->
+        <section id="cart" class="cart-section">
+
+            <h2>Your Cart 🛒</h2>
+
+            <p>
+                Items in your cart:
+                <strong id="cart-total">0</strong>
+            </p>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                📞 Phone:
+                <a href="tel:81442774">81442774</a>
+            </p>
+
+            <p>
+                📧 Email:
+                <a href="mailto:rashahujeiry555@gmail.com">
+                    rashahujeiry555@gmail.com
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Rasha Hujeiry. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
